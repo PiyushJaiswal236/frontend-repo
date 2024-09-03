@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .container {
+            width: 400px;
+            min-height: 860px;
+            border: 1px solid black;
+            position: relative;
+            left: 230px;
+            background-image: url(https://wallpaperaccess.com/full/1833153.png);
+            background-size: 100%;
+            background-position: center center;
+        }
+
+        .mobile {
+            width: 92%;
+            height: 830px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            top: 15px;
+            left: 15px;
+            border-radius: 15px 15px 45px 45px;
+            backdrop-filter: blur(5px);
+            overflow: hidden;
+        }
+
+        .section {
+            min-height: 170px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .headline-1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        #img1 {
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .steps {
+            position: relative;
+            top: 30px;
+        }
+
+        .count {
+            position: relative;
+            top: 30px;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .total {
+            position: relative;
+            top: 30px;
+        }
+
+        .box {
+            border: 1px solid white;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+
+        #b3 {
+            height: 120px;
+            width: 320px;
+        }
+
+        #b4 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            height: 320px;
+        }
+
+        #s3 {
+            min-height: 50px;
+            border-radius: 65px;
+            border: 1px solid;
+            backdrop-filter: blur(10px);
+        }
+        #s3 > i{
+            font-size: 25px;
+            position: relative;
+            top: 12px;
+            left:20px;
+        }
+        #s3 > i:nth-child(3){
+            left: 140px;
+        }
+        #s3 > i:nth-child(2){
+            left: 60px;
+        }
+        #s3 > i:nth-child(1){
+            background-color: aliceblue;
+            color: rgb(92, 92, 92);
+            border-radius: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mobile">
+            <div class="section" id="s1">
+                <div class="headline-1">Good Day</div>
+                <div class="headline-1">Mark!</div>
+                <img id="img1" height="60" src="https://pbs.twimg.com/profile_images/1140291006035873792/qg6sklQC.jpg"
+                    alt="" />
+                <div class="steps">Steps</div>
+                <span class="count">1265</span>
+                <span class="total">/1000</span>
+            </div>
+            <div class="section" id="s2">
+                <div class="box" id="b1">1</div>
+                <div class="box" id="b2">2</div>
+                <div class="box" id="b3">3</div>
+                <div class="box" id="b4">4</div>
+
+            </div>
+            <div class="section" id="s3">
+                <i class="ri-home-8-line">Home</i>
+                <i class="ri-play-circle-line"></i>
+                <i class="ri-account-box-fill"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
