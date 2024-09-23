@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card{
+    box-shadow: 0px 0px 20px rgb(203, 203, 203);
+    width: 69%;
+    height: 78%;
+    display: flex;
+    background-color: rgb(183, 140, 252);
+    border-radius: 30px;
+}
+
+#section1{
+    width: 40%;
+    height: 100%;
+}
+#section2{
+    width: 60%;
+    height: 100%;
+    background-color:white ;
+    border-radius: 30px;
+}
+.content{
+    padding: 4% 10%;
+    height: inherit;
+
+}
+.logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.logo p{
+    font-weight: 700;
+    color: white;
+}
+.logo>p{
+    font-size: 2.2rem;
+}
+.logo-text{
+    line-height: 0.9;
+}
+.tagline{
+    color: white;
+    font-size: 0.8rem;
+}
+.content-text{
+    margin-top : 8%;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+.image{
+    margin-top: 5%;
+    width: 100%;
+}
+.image>img{
+    width: 100%;
+}
+.lang-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content:right;
+}
+.language{
+    width: min-content;
+    font-size: 0.8rem;
+    color: rgb(197, 197, 197);
+    font-weight: 700;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+.form-container{
+    margin: 0px 40px;
+    margin-top:25px ;
+    margin-bottom: 20px;
+}
+.form-container>form{
+    margin: 20px 0px;
+}
+input{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-bottom: 2px solid rgb(237, 236, 236);
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+}
+input:focus-visible{
+    outline: none;
+}
+.terms{
+    margin: 15px 0px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    color: grey;
+}
+.terms>input{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    margin-right: 10px;
+}
+form>button{
+    width: 100%;
+    padding: 11px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(157, 9, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.social-medial-img{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border: 1px solid rgb(237, 236, 236);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 0.8rem;
+}
+.line{
+    flex: 1;
+    height: 0px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.signup-options{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.signup-options img{
+    width: 15px;
+    height: 15px;
+}
+.signin{
+    text-align: center;
+    color: gray;
+    font-size: 0.7rem;
+}

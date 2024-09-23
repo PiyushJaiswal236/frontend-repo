@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.menu > p{
+    color: green;
+    font-weight: 800;
+}
+
+.account > button{
+    border: none;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background:rgb(137, 191, 21);
+    font-weight: 800;
+    color: white;
+}
