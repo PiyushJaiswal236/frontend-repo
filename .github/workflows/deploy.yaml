@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   workflow_run:
-    workflows: ["Update HTML"]
+    workflows: ["Update Listing Page"]
     types:
       - completed
 
