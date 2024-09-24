@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add root/index.html
+          git add index.html
           git commit -m 'Update root/index.html with new folder links'
           git push
         env:
