@@ -35,7 +35,11 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add index.html
-          git commit -m 'Update root/index.html with new folder links'
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit"
+          else
+            git commit -m "Deploy to GitHub Pages"
+            git push origin main
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
