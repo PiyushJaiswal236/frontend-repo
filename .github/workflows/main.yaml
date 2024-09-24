@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: List directory contents
+        run: ls -R
+
       - name: Compile TypeScript
         run: npx tsc
 
