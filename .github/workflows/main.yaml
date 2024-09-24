@@ -39,3 +39,8 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: updated-html
+          path: .
