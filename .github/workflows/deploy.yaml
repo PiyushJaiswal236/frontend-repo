@@ -1,0 +1,18 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ["Update HTML"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy
