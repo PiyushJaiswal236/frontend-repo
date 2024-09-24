@@ -1,0 +1,18 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore environment files
+.env
+
+# Ignore TypeScript build files
+*.tsbuildinfo
