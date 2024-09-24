@@ -1,0 +1,38 @@
+name: Update Listing Page
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile TypeScript
+        run: npx tsc
+
+      - name: Run update script
+        run: node updateHtml.js
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add root/index.html
+          git commit -m 'Update root/index.html with new folder links'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
