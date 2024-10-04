@@ -136,24 +136,24 @@ body{
     bottom: 0;
     left: calc((98%/2));
     height: calc(60%);
-    width: 300px;
+    width: 30px;
     /* border-radius: 51% 49% 100% 0% / 100% 100% 0% 0% ; */
     border-radius:30% ;
     background-color: rgb(210, 210, 210);
     z-index: 50;
-    transform: translateX(-215px) translateY(18px) rotateX(174deg) rotateY(-71deg);
+    /* transform: translateX(-215px) translateY(18px) rotateX(174deg) rotateY(-71deg); */
 }
 .blade-container{
    
     height: 400px;
     width: 400px;
-    left: 7.5%;
-    top:6%;
+    left: 9%;
+    top:8.5%;
     position: relative;
     /* background-color: rgba(234, 194, 143, 0.603); */
     /* animation: blabe-rotation 6s linear none infinite ; */
     z-index: 51;
-    perspective: 250px;
+    perspective: 350px;
 }
 .rotation{
     animation: blade-rotation 6s linear none infinite ;
@@ -228,5 +228,5 @@ body{
 
 #w1{
     /* transform: translateX(400px)translateY(-80px)translateZ(-50px)rotateX(15deg)rotateY(250deg); */
-    transform:translateX(134px)translateY(15px)translateZ(74px)rotateX(7deg)rotateY(45deg);
+    transform:translateX(80px)translateY(30px)translateZ(74px)rotateX(20deg)rotateY(45deg)rotateZ(10deg);
 }
