@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(204, 255, 255);
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "aside main main main"
+      "footer footer footer footer";
+  }
+  
+  .part {
+    background-color: aquamarine;
+    min-height: 100px;
+    border: 1px solid black;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .reserve {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .reserve-btn {
+    background-color: red;
+    border: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+  }
+  .reserve > i {
+    font-size: 22px;
+  }
+  
+  .menu > select,
+  .contact-btn {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+  }
+  
+  .reserve-btn:active {
+    background-color: brown;
+  }
+  #p1 {
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #p2 {
+    grid-area: aside;
+    min-height: 1410px;
+    max-width: 340px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+  }
+  
+  .food-menu {
+    background-color: white;
+    height: 400px;
+    max-width: 300px;
+    display: grid;
+    box-shadow: 0px 0px 10px lightblue;
+  }
+  
+  .menu-header {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 0px 15px;
+  }
+  .food-menu > .items {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  
+  .food-menu > .items:hover {
+    background-color: #f1f1f1;
+    border-left: 4px solid orangered;
+  }
+  
+  /* --------------------- */
+  
+  .deal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px lightblue;
+  
+  }
+  .deal > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  .deal-header{
+    background-color: orangered;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+  }
+  .size{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .size > div{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px lightblue;
+  }
+  .size > div:nth-child(1){
+    background-color: orangered;
+    color: aliceblue;
+  }
+  .price{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .deal-note{
+    text-align: center;
+  }
+  .poster{
+    background-color: yellow;
+    height: 500px;
+    background-image: url(https://i.pinimg.com/564x/12/ac/60/12ac606896dfc98f4806b7acababed67.jpg);
+    background-size: cover;
+    background-position: center right;
+    box-shadow: 0px 0px 10px lightblue;
+  }
+  /* --------------------- */
+  
+  
+  #p3 {
+    grid-area: main;
+    min-height: 1410px;
+  }
+  
+  #p4 {
+    grid-area: footer;
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(204, 255, 255);
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "aside main main main"
+      "footer footer footer footer";
+  }
+  
+  .part {
+    background-color: aquamarine;
+    min-height: 100px;
+    border: 1px solid black;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .reserve {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .reserve-btn {
+    background-color: red;
+    border: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+  }
+  .reserve > i {
+    font-size: 22px;
+  }
+  
+  .menu > select,
+  .contact-btn {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+  }
+  
+  .reserve-btn:active {
+    background-color: brown;
+  }
+  #p1 {
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #p2 {
+    grid-area: aside;
+    min-height: 1410px;
+    min-width: 340px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+  }
+  
+  .food-menu {
+    background-color: white;
+    height: 400px;
+    max-width: 300px;
+    display: grid;
+    box-shadow: 0px 0px 10px lightblue;
+  }
+  
+  .menu-header {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 0px 15px;
+  }
+  .food-menu > .items {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  
+  .food-menu > .items:hover {
+    background-color: #f1f1f1;
+    border-left: 4px solid orangered;
+  }
+  
+  /* --------------------- */
+  
+  .deal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px lightblue;
+  
+  }
+  .deal > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  .deal-header{
+    background-color: orangered;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+  }
+  .size{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .size > div{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px lightblue;
+  }
+  .size > div:nth-child(1){
+    background-color: orangered;
+    color: aliceblue;
+  }
+  .price{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .deal-note{
+    text-align: center;
+  }
+  .poster{
+    background-color: yellow;
+    height: 500px;
+    background-image: url(https://i.pinimg.com/564x/12/ac/60/12ac606896dfc98f4806b7acababed67.jpg);
+    background-size: cover;
+    background-position: center right;
+    box-shadow: 0px 0px 10px lightblue;
+  }
+  /* --------------------- */
+  
+  
+  #p3 {
+    grid-area: main;
+    min-height: 1410px;
+    width: 1100px;
+  }
+  .offer{
+    background-color: black;
+    background-image: url(b1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    color: white;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+
+  }
+  .offer-note{
+    text-transform: uppercase;
+    padding: 5px 30px;
+    background-color: orange;
+  }
+  .offer-header{
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .offer-para{
+    width: 400px;
+  }
+  .offer-btn{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+  /* ------------------- */
+  .popular{
+    padding: 20px;
+    border-bottom-color: blueviolet;
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    color: white;
+  }
+  .popular-item1{
+    grid-row: 1/3;
+    background-image: url(https://i.pinimg.com/564x/a6/08/dc/a608dca35982e969d82c9fbde3ec52a7.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+  .popular-item2{
+    background-image: url(https://images.pexels.com/photos/27612493/pexels-photo-27612493/free-photo-of-a-bowl-of-food-with-carrots-peppers-and-spices.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+  }  
+  .popular-item3{
+    background-image: url(image.png);
+    background-position: center;
+    padding: 20px;
+    
+    background-size: cover;
+  }
+/*-----------------*/
+  .display-info{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.display-note{
+  background-color: orange;
+  border-radius: 2px;
+  padding: 7px 17px;
+  font-size: 11px;
+  color: aliceblue;
+}
+  .display-header{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .display-line{
+    height: 1px;
+    width: 77px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+  }
+  .display-para{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .display-icons{
+    display: flex;
+    margin-top: 10px;
+    gap: 2px;
+  }
+  .display-icons>img{
+    height: 45px;
+    padding-bottom:  10px;
+    margin: 5px;
+}
+  .display-icons>img:nth-child(1){
+    
+    border-bottom: 2px solid brown;
+  }
+  /* -------------------- */
+  #p4 {
+    grid-area: footer;
+  }

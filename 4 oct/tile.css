@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+.container{
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+.bg-1{
+    background-color: black;
+}
+.bg-2{
+    background-color: blueviolet;
+}
+.tile{
+position: absolute;
+}
+#t1{
+    top:5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    animation: rotation  8s ease-in-out none infinite alternate ;
+}
+#t2{
+    top:7.5%;
+    left: 7.5%;
+height: 85%;
+width: 85%;
+animation: rotation 7.75s ease-in-out none infinite alternate ;
+}
+#t3{
+    top:10%;
+    left: 10%;
+height: 80%;
+width: 80%;
+animation: rotation 7.5s ease-in-out none infinite alternate ;
+}
+#t4{
+    top:12.5%;
+    left: 12.5%;
+height: 75%;
+width: 75%;
+animation: rotation 7.25s ease-in-out none infinite alternate ;
+}
+#t5{
+    top:15%;
+    left: 15%;
+height: 70%;
+width: 70%;
+animation: rotation 7s ease-in-out none infinite alternate ;
+}
+#t6{
+    top:17.5%;
+    left: 17.5%;
+height: 65%;
+width: 65%;
+animation: rotation 6.75s ease-in-out none infinite alternate ;
+}
+#t7{
+    top:20%;
+    left: 20%;
+height: 60%;
+width: 60%;
+animation: rotation 6.5s ease-in-out none infinite alternate ;
+}
+#t8{
+    top:22.5%;
+    left: 22.5%;
+height: 55%;
+width: 55%;
+animation: rotation 6.25s ease-in-out none infinite alternate ;
+}
+#t9{
+    top:25%;
+    left: 25%;
+height: 50%;
+width: 50%;
+animation: rotation 6s ease-in-out none infinite alternate ;
+}
+#t10{
+    top:27.5%;
+    left: 27.5%;
+height: 45%;
+width: 45%;
+animation: rotation 5.75s ease-in-out none infinite alternate ;
+}
+#t11{
+    top:30%;
+    left: 30%;
+height: 40%;
+width: 40%;
+animation: rotation 5.5s ease-in-out none infinite alternate  ;
+}
+#t12{
+    top:32.5%;
+    left: 32.5%;
+height: 35%;
+width: 35%;
+animation: rotation 5.25s ease-in-out none infinite alternate ;
+}
+#t11{
+    top:35%;
+    left: 35%;
+height: 30%;
+width: 30%;
+animation: rotation 5.5s ease-in-out none infinite alternate  ;
+}
+#t12{
+    top:37.5%;
+    left: 37.5%;
+height: 25%;
+width: 25%;
+animation: rotation 5.25s ease-in-out none infinite alternate ;
+}
+#t13{
+    top:35%;
+    left: 35%;
+height: 30%;
+width: 30%;
+animation: rotation 5s ease-in-out none infinite alternate ;
+}
+#t14{
+    top:37.5%;
+    left: 37.5%;
+height: 25%;
+width: 25%;
+animation: rotation 4.75s ease-in-out none infinite alternate ;
+}
+#t15{
+    top:40%;
+    left: 40%;
+height: 20%;
+width: 20%;
+animation: rotation 4.5s ease-in-out none infinite alternate ;
+}
+#t16{
+    top:42.5%;
+    left: 42.5%;
+height: 15%;
+width: 15%;
+animation: rotation 4.25s ease-in-out none infinite  alternate;
+}
+#t17{
+    top:45%;
+    left: 45%;
+height: 10%;
+width: 10%;
+animation: rotation 4s ease-in-out none infinite  alternate;
+}
+
+@keyframes rotation{
+    from{
+        transform:rotate(0deg);
+        background-color:rgb(250, 159, 159) ;
+    }
+    to{
+        transform:rotate(360deg);
+        background-color: rgb(42, 42, 254);
+    }
+}
+

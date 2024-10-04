@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(110, 241, 78);
+    /* animation-name: per; */
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    perspective: 1000px;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    
+    transform-style: preserve-3d;
+    
+}
+.flower{
+    
+    transform: rotateY(90deg);
+    background-color: rgb(252, 249, 62);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius:1% 99% 0% 100% / 0% 98% 2% 100%  ;
+    transform-origin: top left;
+
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        /* transform: rotateX(-15deg) rotateY(30deg); */
+    }
+    to{
+        transform: rotate(360deg);
+        /* transform: rotateX(-55deg) rotateY(40deg); */
+    }
+}
+@keyframes per{
+    from{
+        transform: rotateX(0deg) rotateY(30deg) rotateZ(0);
+    }
+    to{
+        transform: rotateX(30deg) rotateY(360deg) rotateZ(0deg);
+    }
+
+}
+#f1{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+#f2{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+
+    
+}
+#f3{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay:2.0s;
+
+    
+}#f4{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+}
+#f5{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+#f6{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+}
